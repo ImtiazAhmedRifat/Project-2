@@ -1,11 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meet Your Pet</title>
-</head>
-<body>
-    
-</body>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <header class="container mx-auto">
+      <!-- nav bar start -->
+      <nav>
+        <div class="navbar">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              >
+                <li><a>Home</a></li>
+                <li>
+                  <a>Shop</a>
+                </li>
+                <li><a>Contract</a></li>
+              </ul>
+            </div>
+            <div class="hidden lg:flex gap-2">
+              <img src="./images/logo.webp" alt="" />
+              <h4 class="font-bold text-xl">Peddy</h4>
+            </div>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a>Home</a></li>
+              <li>
+                <a href="">Shop</a>
+              </li>
+              <li><a>Contract</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <div>
+              <img
+                src="https://img.icons8.com/?size=50&id=7819&format=png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- nav bar end -->
+      <div class="flex flex-col justify-center items-center gap-6 my-4">
+        <h3 class="font-bold">Bringing Families Together ❤️‍🔥</h3>
+        <h1 class="text-4xl font-extrabold w-4/12 text-center">
+          Your Path to Adoption Starts Here
+        </h1>
+        <p class="w-2/5">
+          It is a long established fact that a reader will be distracted by the
+          readable content of a page when looking at its layout. The point of
+          using Lorem Ipsum is that it has a.
+        </p>
+        <button class="btn bg-[#0B7A80] text-white">View More</button>
+        <img src="./images/pet.webp" alt="" />
+      </div>
+    </header>
+    <main class="container mx-auto">
+      <section>
+        <div class="flex flex-col justify-center items-center gap-4">
+          <h3 class="font-bold text-2xl">Adopt Your Best Friend</h3>
+          <p class="w-2/5 ">
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout. The point
+            of using Lorem Ipsum is that it has a.
+          </p>
+        </div>
+        <div id="load-pet-categories" class="flex justify-between my-12">
+
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+
+    <script src="./scripts/app.js"></script>
+  </body>
 </html>
